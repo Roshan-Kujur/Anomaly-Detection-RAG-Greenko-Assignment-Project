@@ -1,0 +1,5 @@
+﻿Fault Type,Description,Causes,Impact
+Switching Device Failures,"Failure of MOSFETs, IGBTs, or diodes in the inverter","Thermal stress, high voltage spikes, and aging","Power loss, inverter shutdown, grid instability"
+Overheating,Excessive temperature rise leads to component degradation.,"Poor ventilation, high ambient temperature, and overloads","Efficiency loss, permanent damage to components"
+Capacitor Aging,Electrolytic capacitor failure due to aging,"High ripple current, thermal stress",Inverter Instability reduces efficiency
+Control Circuit Malfunction,"Failure in microcontrollers, sensors, or software algorithms","EMI interference, software bugs, and hardware damage","Erratic inverter operation, poor grid synchronization"

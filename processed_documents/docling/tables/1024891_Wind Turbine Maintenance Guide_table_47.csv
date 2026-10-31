@@ -1,0 +1,15 @@
+﻿Conditions,1,2,3,4,5,6,7,8
+Critical: Yes,X,X,X,X,,,,
+No,,,,,X,X,X,X
+Duty Cycle: High,X,,X,,X,,X,
+Low,,X,,X,,X,,X
+Service Condition: Severe,X,X,,,X,X,,
+Mild,,,X,X,,,X,X
+PM Tasks:,Frequency Interval,Frequency Interval,Frequency Interval,Frequency Interval,Frequency Interval,Frequency Interval,Frequency Interval,Frequency Interval
+Calibration,D,W,W,W,M,M,M,M
+Cleaning,D,W,W,W,M,M,M,M
+Lubrication,M,Q,Q,Q,S,S,S,S
+Oil analysis,M,M,M,M,Q,Q,Q,Q
+Operator checks,D,W,W,W,M,M,M,M
+Vibration analysis,M,M,M,M,Q,Q,Q,Q
+Visual inspection,D,W,W,W,M,M,M,M

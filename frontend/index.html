@@ -1,0 +1,831 @@
+<!-- <!doctype html> -->
+<!-- <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Renewable Asset Fault & Anomaly Detection Copilot Demo</title>
+<style>body{font-family:Arial,sans-serif;margin:32px;background:#f7fafc}.card{background:white;border:1px solid #ddd;border-radius:12px;padding:20px;max-width:850px}button{background:#12372a;color:white;border:0;border-radius:8px;padding:10px 14px;cursor:pointer}pre{background:#0f172a;color:#e5e7eb;padding:16px;border-radius:10px;overflow:auto}</style></head>
+<body><div class="card"><h1>Renewable Asset Fault & Anomaly Detection Copilot</h1><p>This is a lightweight frontend starter. Connect it to the FastAPI endpoints in <code>/backend/app.py</code>.</p><button onclick="runDemo()">Run sample API call</button><pre id="out">Click the button to test.</pre></div>
+<script>
+async function runDemo(){
+  try{ const r=await fetch('/api/demo'); const j=await r.json(); document.getElementById('out').textContent=JSON.stringify(j,null,2); }
+  catch(e){ document.getElementById('out').textContent='Backend not connected yet. Run FastAPI and serve frontend or deploy together.'; }
+}
+</script></body></html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Greenero AI Copilot - Renewable Energy Anomaly Detection and Diagnostics"
+    >
+
+    <title>Greenko AI Copilot</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="brand">
+            <div class="brand-mark">G</div>
+
+            <div class="header-left">
+                <h1>GREENKO AI COPILOT</h1>
+                <p>Intelligent Renewable Energy Operations Center</p>
+            </div>
+        </div>
+
+        <div class="header-right">
+
+            <div class="header-status">
+                <span class="status-indicator"></span>
+                <span>Copilot Interface Ready</span>
+            </div>
+
+            <div class="system-status-group">
+
+                <div class="status-chip" id="apiStatus">
+                    <span class="status-dot"></span>
+                    API: Not checked
+                </div>
+
+                <div class="status-chip">
+                    <span class="status-dot status-blue"></span>
+                    ML: Backend managed
+                </div>
+
+                <div class="status-chip">
+                    <span class="status-dot status-purple"></span>
+                    RAG: Conditional
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD KPI CARDS ================= -->
+
+    <section class="kpi-grid">
+
+        <article class="kpi-card">
+
+            <div class="kpi-top">
+                <span class="kpi-label">SELECTED ASSET</span>
+                <span class="kpi-symbol">⌖</span>
+            </div>
+
+            <h2 class="kpi-value" id="kpiAsset">—</h2>
+
+            <p class="kpi-meta" id="kpiAssetType">
+                Awaiting asset selection
+            </p>
+
+        </article>
+
+
+        <article class="kpi-card">
+
+            <div class="kpi-top">
+                <span class="kpi-label">POWER OUTPUT</span>
+                <span class="kpi-symbol">ϟ</span>
+            </div>
+
+            <h2 class="kpi-value" id="kpiPower">—</h2>
+
+            <p class="kpi-meta">Current reading · MW</p>
+
+        </article>
+
+
+        <article class="kpi-card">
+
+            <div class="kpi-top">
+                <span class="kpi-label">TEMPERATURE</span>
+                <span class="kpi-symbol">◇</span>
+            </div>
+
+            <h2 class="kpi-value" id="kpiTemperature">—</h2>
+
+            <p class="kpi-meta">Current reading · °C</p>
+
+        </article>
+
+
+        <article class="kpi-card">
+
+            <div class="kpi-top">
+                <span class="kpi-label">ASSET HEALTH</span>
+                <span class="kpi-symbol">◎</span>
+            </div>
+
+            <h2 class="kpi-value health-pending" id="kpiHealth">
+                Awaiting
+            </h2>
+
+            <p class="kpi-meta" id="kpiHealthMeta">
+                Requires ML assessment
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- ================= MAIN WORKSPACE ================= -->
+
+    <main class="copilot-layout">
+
+
+        <!-- =====================================
+             01. ASSET INFORMATION
+        ====================================== -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="section-kicker">01 / ASSET SETUP</span>
+
+                    <h2 class="panel-title">
+                        Asset Information
+                    </h2>
+
+                    <p class="panel-description">
+                        Identify the renewable energy asset to analyze.
+                    </p>
+                </div>
+
+                <span class="section-icon">⌖</span>
+
+            </div>
+
+
+            <div class="asset-grid">
+
+                <div class="form-group">
+
+                    <label for="assetId">Asset ID</label>
+
+                    <input
+                        type="text"
+                        id="assetId"
+                        placeholder="e.g. SOLAR_INV_01"
+                        autocomplete="off"
+                        required
+                    >
+
+                    <span class="field-hint">
+                        Enter the asset identifier from the telemetry dataset.
+                    </span>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="assetType">Asset Type</label>
+
+                    <select id="assetType" required>
+
+                        <option value="solar">
+                            Solar
+                        </option>
+
+                        <option value="wind">
+                            Wind
+                        </option>
+
+                    </select>
+
+                    <span class="field-hint">
+                        Select the asset's operating category.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             02. TELEMETRY INPUT
+        ====================================== -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="section-kicker">02 / OPERATIONAL DATA</span>
+
+                    <h2 class="panel-title">
+                        Telemetry Monitoring
+                    </h2>
+
+                    <p class="panel-description">
+                        Enter the latest sensor readings for ML inference.
+                    </p>
+                </div>
+
+                <span class="live-tag">
+                    INPUT PANEL
+                </span>
+
+            </div>
+
+
+            <form id="telemetryForm" novalidate>
+
+                <div class="telemetry-grid">
+
+                    <!-- Timestamp -->
+
+                    <div class="telemetry-field">
+
+                        <label for="timestampId">
+                            Timestamp ID
+                        </label>
+
+                        <input
+                            type="number"
+                            id="timestampId"
+                            placeholder="Enter timestamp ID"
+                            step="1"
+                            required
+                        >
+
+                        <span class="field-unit">
+                            Sequential identifier
+                        </span>
+
+                    </div>
+
+
+                    <!-- Temperature -->
+
+                    <div class="telemetry-field">
+
+                        <label for="temperature">
+                            Temperature
+                        </label>
+
+                        <input
+                            type="number"
+                            id="temperature"
+                            placeholder="e.g. 46"
+                            step="any"
+                            required
+                        >
+
+                        <span class="field-unit">°C</span>
+
+                    </div>
+
+
+                    <!-- Vibration -->
+
+                    <div class="telemetry-field">
+
+                        <label for="vibration">
+                            Vibration
+                        </label>
+
+                        <input
+                            type="number"
+                            id="vibration"
+                            placeholder="e.g. 8.2"
+                            step="any"
+                            required
+                        >
+
+                        <span class="field-unit">mm/s</span>
+
+                    </div>
+
+
+                    <!-- Power -->
+
+                    <div class="telemetry-field">
+
+                        <label for="power">
+                            Power Output
+                        </label>
+
+                        <input
+                            type="number"
+                            id="power"
+                            placeholder="e.g. 0.18"
+                            step="any"
+                            required
+                        >
+
+                        <span class="field-unit">MW</span>
+
+                    </div>
+
+
+                    <!-- Solar Irradiance -->
+
+                    <div class="telemetry-field solar-field">
+
+                        <label for="irradiance">
+                            Solar Irradiance
+                        </label>
+
+                        <input
+                            type="number"
+                            id="irradiance"
+                            placeholder="e.g. 720"
+                            step="any"
+                            required
+                        >
+
+                        <span class="field-unit">W/m²</span>
+
+                    </div>
+
+
+                    <!-- Wind Speed -->
+
+                    <div class="telemetry-field wind-field hidden">
+
+                        <label for="windSpeed">
+                            Wind Speed
+                        </label>
+
+                        <input
+                            type="number"
+                            id="windSpeed"
+                            placeholder="e.g. 12.5"
+                            step="any"
+                            required
+                            disabled
+                        >
+
+                        <span class="field-unit">m/s</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Error message -->
+
+                <div
+                    id="errorMessage"
+                    class="message-box error-message hidden"
+                    role="alert"
+                    aria-live="assertive"
+                ></div>
+
+
+                <!-- Analysis progress -->
+
+                <div
+                    id="analysisProgress"
+                    class="progress-message hidden"
+                    role="status"
+                    aria-live="polite"
+                >
+
+                    <span class="loading-indicator"></span>
+
+                    <span id="progressText">
+                        Submitting telemetry for analysis...
+                    </span>
+
+                </div>
+
+
+                <!-- Analyze button -->
+
+                <div class="button-container">
+
+                    <button
+                        type="submit"
+                        id="analyzeButton"
+                        class="btn-primary"
+                    >
+                        <span>Analyze Telemetry</span>
+                        <span class="button-arrow">→</span>
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- =====================================
+             03. DIAGNOSTIC INTELLIGENCE
+        ====================================== -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="section-kicker">03 / INTELLIGENCE</span>
+
+                    <h2 class="panel-title">
+                        Diagnostic Intelligence
+                    </h2>
+
+                    <p class="panel-description">
+                        ML anomaly detection and RAG-powered diagnostic assessment.
+                    </p>
+                </div>
+
+                <span class="ai-indicator">
+                    AI ANALYSIS
+                </span>
+
+            </div>
+
+
+            <!-- Initial state -->
+
+            <div id="emptyState" class="empty-state">
+
+                <div class="empty-icon">◎</div>
+
+                <h3>Awaiting Telemetry Analysis</h3>
+
+                <p>
+                    Submit asset readings to begin anomaly detection.
+                    Diagnostic insights will appear here after backend analysis.
+                </p>
+
+            </div>
+
+
+            <!-- Results -->
+
+            <div id="diagnosticResults" class="hidden">
+
+                <!-- ML Result -->
+
+                <div class="prediction-status">
+
+                    <div>
+
+                        <span class="prediction-label">
+                            ML MODEL PREDICTION
+                        </span>
+
+                        <h3
+                            id="predictionValue"
+                            class="prediction-value"
+                        >
+                            Awaiting prediction
+                        </h3>
+
+                        <p
+                            id="predictionMeta"
+                            class="prediction-meta"
+                        ></p>
+
+                    </div>
+
+
+                    <div class="prediction-side">
+
+                        <span class="prediction-label">
+                            ANOMALOUS FEATURES
+                        </span>
+
+                        <strong id="anomalyCount">—</strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Anomaly features -->
+
+                <div
+                    id="anomalyFeaturePanel"
+                    class="anomaly-feature-panel hidden"
+                >
+
+                    <h3>Detected Feature Deviations</h3>
+
+                    <div
+                        id="anomalyFeatures"
+                        class="feature-badges"
+                    ></div>
+
+                </div>
+
+
+                <!-- Normal prediction message -->
+
+                <div
+                    id="normalResult"
+                    class="normal-result hidden"
+                >
+
+                    <div class="normal-icon">✓</div>
+
+                    <div>
+                        <h3>No Anomaly Detected</h3>
+
+                        <p>
+                            The ML inference layer did not identify
+                            an anomaly in the submitted observation.
+                            RAG diagnostics were therefore skipped.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- RAG results -->
+
+                <div id="ragResults" class="hidden">
+
+                    <!-- RAG processing status -->
+
+                    <div class="rag-status-row">
+
+                        <div>
+                            <span class="section-kicker">
+                                KNOWLEDGE-ASSISTED DIAGNOSIS
+                            </span>
+
+                            <h3>RAG Diagnostic Assessment</h3>
+                        </div>
+
+                        <span
+                            id="ragStatusBadge"
+                            class="badge badge-pending"
+                        >
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        id="ragFailureMessage"
+                        class="message-box warning-message hidden"
+                        role="status"
+                    ></div>
+
+
+                    <!-- LLM summary -->
+
+                    <article class="diagnostic-card summary-card">
+
+                        <h3>Anomaly Summary</h3>
+
+                        <p id="anomalySummary">
+                            No diagnostic summary available.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Overall assessment -->
+
+                    <article class="diagnostic-card assessment-card">
+
+                        <h3>Overall Assessment</h3>
+
+                        <p id="overallAssessment">
+                            No overall assessment available.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Diagnostic cards -->
+
+                    <div class="diagnostics-grid">
+
+
+                        <!-- Potential Causes -->
+
+                        <article class="diagnostic-card">
+
+                            <div class="card-heading">
+                                <span class="card-number">01</span>
+                                <h3>Potential Causes</h3>
+                            </div>
+
+                            <div id="potentialCauses" class="content-list">
+
+                                <p class="muted-text">
+                                    Awaiting diagnostic results.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Troubleshooting -->
+
+                        <article class="diagnostic-card">
+
+                            <div class="card-heading">
+                                <span class="card-number">02</span>
+                                <h3>Troubleshooting Checks</h3>
+                            </div>
+
+                            <div id="troubleshootingChecks" class="content-list">
+
+                                <p class="muted-text">
+                                    Awaiting diagnostic results.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Preventive recommendations -->
+
+                        <article class="diagnostic-card">
+
+                            <div class="card-heading">
+                                <span class="card-number">03</span>
+                                <h3>Preventive Recommendations</h3>
+                            </div>
+
+                            <div
+                                id="preventiveRecommendations"
+                                class="content-list"
+                            >
+
+                                <p class="muted-text">
+                                    Awaiting diagnostic results.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Evidence limitations -->
+
+                        <article class="diagnostic-card">
+
+                            <div class="card-heading">
+                                <span class="card-number">04</span>
+                                <h3>Evidence Limitations</h3>
+                            </div>
+
+                            <div
+                                id="evidenceLimitations"
+                                class="content-list"
+                            >
+
+                                <p class="muted-text">
+                                    Awaiting diagnostic results.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- Retrieved source documents -->
+
+                    <section class="evidence-section">
+
+                        <div class="evidence-header">
+
+                            <div>
+                                <span class="section-kicker">
+                                    RETRIEVED KNOWLEDGE
+                                </span>
+
+                                <h3>Supporting Evidence & Sources</h3>
+                            </div>
+
+                            <span class="evidence-tag">
+                                RAG EVIDENCE
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="retrievedDocuments"
+                            class="document-list"
+                        >
+
+                            <p class="muted-text">
+                                Retrieved source information will appear here.
+                            </p>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             04. ANALYSIS HISTORY
+        ====================================== -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <span class="section-kicker">04 / ACTIVITY</span>
+
+                    <h2 class="panel-title">
+                        Analysis History
+                    </h2>
+
+                    <p class="panel-description">
+                        Previous analyses during this browser session.
+                    </p>
+                </div>
+
+                <span class="history-tag">SESSION HISTORY</span>
+
+            </div>
+
+
+            <div class="history-container">
+
+                <table class="history-table">
+
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Asset ID</th>
+                            <th>Asset Type</th>
+                            <th>ML Prediction</th>
+                            <th>RAG Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="historyBody">
+
+                        <tr id="historyEmptyRow">
+
+                            <td colspan="5" class="history-empty">
+                                No analyses performed in this session yet.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div>
+            <strong>GREENKO AI COPILOT</strong>
+
+            <p>
+                Renewable Energy Anomaly Detection & Intelligent Diagnostics
+            </p>
+        </div>
+
+        <span>ML Inference + Retrieval-Augmented Generation</span>
+
+    </footer>
+
+</div>
+
+</body>
+</html>

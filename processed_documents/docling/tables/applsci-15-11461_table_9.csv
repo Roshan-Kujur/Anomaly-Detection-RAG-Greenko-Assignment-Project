@@ -1,0 +1,5 @@
+﻿Fault Type,Description,Causes,Impact
+Open Circuit Faults,Interruption in the current flow due to a broken connection Loose and,"connectors, broken wires, a faulty junction box Power loss in affected modules or strings",
+Short Circuit Faults,An unintended connection between conductors causes excessive current flow,"Insulation failure, moisture ingress, damaged cables Overheating, component damage, fire risk",
+Ground Faults,"Leakage of current to the ground, causing the imbalance","Damaged insulation, improper grounding, and moisture Risk of electric shock, shutdown, and fire hazard",inverter
+Arc Faults,High-temperature plasma discharge in broken conductors Loose,"connections, corroded terminals, damaged cables Fire","hazard, increased electrical losses"

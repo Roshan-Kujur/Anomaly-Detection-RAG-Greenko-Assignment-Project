@@ -1,0 +1,9 @@
+﻿Subcomponent,Description
+Low-speed shaft and high-speed shaft,Transmits rotational work from the rotor hub to the gearbox and from the gearbox to the generator.
+Gearbox,"Converts low-speed rotation from the input shaft of the rotor to high-speed rotation, which drives the high-speed shaft of the generator assembly. Wind turbine gearboxes typically use a planetary gear system."
+Coupling,Attaches the gearbox to the generator. Flexible couplings may be used to reduce oscillating loads that could otherwise cause component damage.
+Bearings,"A number of bearings are required for the shafts, gearbox, yaw mechanism, generator, and other rotating parts."
+Mechanical brakes,A mechanical friction brake and its hydraulic system halt the turbine blades during maintenance and overhaul. A hydraulic disc brake on the yaw mechanism maintains the nacelle position when the nacelle is stationary.
+Electrical generator,Converts high-speed shaft work into electrical energy
+Power electronics,"Couples the generator output to the step-up transformer input, typically with an insulated gate bipolar transistor (IGBT) bridge, allowing the generator to run at variable speed while still outputting 50-60 Hz ac to the grid. Also, makes reactive power possible."
+Cooling unit,"Drives air with a large fan to convectively cool the generator and gearbox, and exhausts waste heat from the nacelle assembly. Ducting directs cool air to the generator."

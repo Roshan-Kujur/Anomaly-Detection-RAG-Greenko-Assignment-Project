@@ -1,0 +1,79 @@
+{
+    "asset_id": "WTG_07",
+    "asset_type": "wind",
+    "timestamp_id": 199,
+    "anomaly_features": [
+        "power_mw",
+        "wind_speed_ms"
+    ],
+    "response": {
+        "asset_id": "WTG_07",
+        "asset_type": "Wind",
+        "anomaly_summary": "WTG_07 shows a clear operating anomaly driven by simultaneous deviations in wind speed and power output. Wind speed is well above its rolling median (6.38 m/s vs 4.22 m/s, modified z-score 4.94), and power output is also far above its rolling median (1.521 MW vs 0.55 MW, modified z-score 4.94). Vibration is not anomalous at this timestamp, and temperature is moderate at 28.25 C. This pattern suggests the turbine is either responding to stronger wind conditions than the recent baseline or operating with an atypical power-to-wind relationship; the available evidence is not sufficient to confirm a specific component fault.",
+        "potential_causes": [
+            {
+                "cause": "Elevated wind resource or a shift in operating conditions relative to the recent baseline",
+                "explanation": "The strongest evidence is that both wind speed and power output increased together relative to their rolling medians. That is consistent with a genuine change in ambient wind conditions rather than an internal electrical or mechanical fault alone. Because the telemetry does not include yaw, rotor speed, pitch angle, or curtailment status, it is not possible to confirm whether the power increase is fully expected for this wind speed.",
+                "supporting_observations": [
+                    "Wind speed increased to 6.38 m/s from a rolling median of 4.22 m/s.",
+                    "Power output increased to 1.521 MW from a rolling median of 0.55 MW.",
+                    "No concurrent vibration anomaly is present, which weakens evidence for an active mechanical disturbance."
+                ],
+                "evidence_sources": [
+                    "E1"
+                ]
+            },
+            {
+                "cause": "Performance shift that warrants checking for control or drivetrain issues, including blade pitch, yaw alignment, generator behavior, or gearbox-related condition",
+                "explanation": "Wind turbine anomaly investigation should identify failure modes and validate operating conditions before concluding a fault. Literature on wind turbine anomalies highlights rotating blade issues, gearbox anomalies, generator anomalies, and hydraulic oil system anomalies as common fault categories, and notes that performance abnormalities can correlate with component temperatures and operating behavior. However, in this case the available telemetry does not show high temperature, abnormal vibration, or direct drivetrain indicators, so this remains only a plausible check path rather than a confirmed root cause.",
+                "supporting_observations": [
+                    "The asset was flagged anomalous with two deviating features: power_mw and wind_speed_ms.",
+                    "Power output is high relative to the recent baseline, but vibration is within the recent normal range.",
+                    "Temperature is not elevated enough here to strongly support a thermal failure mode."
+                ],
+                "evidence_sources": [
+                    "E1",
+                    "E2",
+                    "E4",
+                    "E5"
+                ]
+            }
+        ],
+        "troubleshooting_checks": [
+            {
+                "check": "Confirm whether the wind speed increase is localized to this turbine or reflects a site-wide weather change using neighboring turbines and met mast/scada wind data.",
+                "reason": "If nearby assets saw the same wind increase, the higher power output is more likely a normal response to ambient conditions rather than a turbine fault."
+            },
+            {
+                "check": "Review turbine status tags for curtailment, derating, grid limitation, start-up transition, or control mode changes around timestamp 199.",
+                "reason": "Control-state changes can alter the expected power-to-wind relationship and may explain an apparent performance anomaly without mechanical damage."
+            },
+            {
+                "check": "Inspect yaw alignment, pitch command/response, and rotor speed trends for the same interval.",
+                "reason": "Misalignment or control response issues can cause abnormal power production behavior even when vibration is not elevated."
+            },
+            {
+                "check": "Check recent alarms and maintenance logs for gearbox, generator, hydraulic, or blade-related warnings.",
+                "reason": "Common wind turbine anomaly categories include rotating blade, gearbox, generator, and hydraulic oil system issues, and historical alarms can help narrow the cause."
+            },
+            {
+                "check": "If safe and permitted, perform a visual inspection for blade soiling, damage, icing, or abnormal noise and verify no obvious external obstruction.",
+                "reason": "Blade condition and aerodynamic effects can change power capture without immediately causing elevated vibration."
+            }
+        ],
+        "preventive_recommendations": [
+            "Use rolling-baseline performance monitoring with wind-speed-normalized power curves to distinguish true performance degradation from normal wind variability.",
+            "Trend vibration, temperature, gearbox oil condition, generator temperatures, yaw error, and pitch activity together so emerging issues are not missed when a single sensor remains normal.",
+            "Review alarm thresholds and anomaly logic for wind-speed-driven power changes to reduce false positives during rapidly changing wind conditions.",
+            "Schedule routine inspection of blades, yaw system, pitch system, gearbox lubrication, and generator cooling as part of preventive maintenance.",
+            "If any control, electrical, or mechanical abnormality is found during follow-up, have qualified wind turbine technicians perform detailed inspection and corrective action."
+        ],
+        "evidence_limitations": [
+            "No data are provided for yaw error, pitch angle, rotor speed, generator speed, gearbox temperature, oil condition, electrical quality, or nearby turbine comparisons.",
+            "The retrieved evidence provides general wind-turbine fault patterns and troubleshooting guidance, but it does not prove that any specific fault exists at WTG_07.",
+            "Only one timestamp is shown, so persistence, intermittency, and trend direction cannot be assessed reliably.",
+            "Vibration is not anomalous, which weakens support for a major mechanical fault at this moment."
+        ],
+        "overall_assessment": "Moderate-confidence anomaly detection, low-confidence root-cause diagnosis. The most defensible interpretation is a wind-driven operating change with an atypical power response relative to recent history. A performance-control or early-condition issue cannot be ruled out, but the current evidence does not support a specific component failure."
+    }
+}

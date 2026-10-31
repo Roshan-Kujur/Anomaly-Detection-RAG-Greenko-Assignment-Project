@@ -1,0 +1,4 @@
+﻿Fault Type,Description,Causes,Impact
+The PV system continues generating power even when the grid is down,"Improper anti-islanding protection, grid failure","Safety hazards, damage to appliances, and utility workers",Islanding
+Unequal voltage in different phases of the grid,"Unbalanced loads, grid faults, poor power quality","Efficiency reduction, inverter malfunction",Voltage Imbalances
+Deviation of the grid frequency from nominal values (50/60 Hz),"Grid disturbances, over-generation, and poor inverter response","Inverter tripping, grid instability, and power losses",Frequency Shifts

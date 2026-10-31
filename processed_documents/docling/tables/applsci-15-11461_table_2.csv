@@ -1,0 +1,6 @@
+﻿Impact,Description,Potential Solution
+Intermittency and Variability,"Solar power generation depends on sunlight, leading to fluctuations in power supply.","Use battery storage, demand response, and hybrid energy systems."
+Reverse Power Flow,Excess solar energy fed back into the grid can overload transformers and cause instability.,Implement smart grid technology and dynamic voltage control.
+Harmonic Distortions,"Poor-quality inverters introduce harmonic distortions, affecting power quality.",Use high-quality inverters with harmonic filtering.
+Lack of Inertia and Frequency Instability,"Unlike traditional generators, solar PV does not provide rotational inertia, making frequency regulation difficult.","Deploy grid-forming inverters, battery storage, and flexible power plants."
+Grid Voltage Fluctuations,Sudden changes in solar generation can lead to voltage instability in the grid.,Utilize advanced power electronics and voltage regulation techniques.

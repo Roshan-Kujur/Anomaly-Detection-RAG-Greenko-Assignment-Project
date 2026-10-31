@@ -1,0 +1,12 @@
+{
+    "generated_at": "2026-10-31T03:12:30.635214+05:30",
+    "historical_observations": 192,
+    "incoming_observations": 48,
+    "total_predictions": 48,
+    "total_anomalies": 3,
+    "total_normal_observations": 45,
+    "total_rag_ready_records": 3,
+    "anomalies_by_asset_type": {
+        "wind": 3
+    }
+}

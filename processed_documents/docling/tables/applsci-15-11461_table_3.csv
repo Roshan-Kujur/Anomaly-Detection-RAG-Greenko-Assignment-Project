@@ -1,0 +1,6 @@
+﻿Impact,Description,Potential Solution
+Grid Voltage Fluctuations,"Variations in grid voltage can cause solar inverters to disconnect, leading to energy losses.",Use smart inverters with voltage regulation capabilities.
+Frequency Variations,"Grid frequency instability affects inverter operation, sometimes forcing PV systems to shut down.",Implement grid-supportive inverters and battery storage.
+Power Curtailment,Grid operators may limit the amount of solar energy fed into the grid during oversupply periods.,Improve grid flexibility and adopt energy storage solutions.
+Grid Congestion,"High solar penetration can overload transmission lines, restricting energy exports.",Upgrade grid infrastructure and introduce demand-side management.
+Grid Outages &Disturbances,"Grid-tied solar PV systems shut down during blackouts, preventing power supply even when sunlight is available.",Deploy battery storage or implement microgrid capabilities for backup power.

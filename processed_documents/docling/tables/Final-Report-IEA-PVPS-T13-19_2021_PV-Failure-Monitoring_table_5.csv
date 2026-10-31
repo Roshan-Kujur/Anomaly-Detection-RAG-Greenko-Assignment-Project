@@ -1,0 +1,20 @@
+﻿0,1,2,3
+Inverter #1 available parameters:,Inverter #1 available parameters:,Inverter #1 available parameters:,Inverter #1 available parameters:
+AC current L1,AC current L2,AC current L3,AC energy
+AC voltage L1,AC voltage L2,AC voltage L3,AC power
+AC frequency L1,AC frequency L2,AC frequency L3,DC voltage
+Energy from grid,Power factor,Reactive power,Reactive power
+Inverter #2 available parameters,Inverter #2 available parameters,Inverter #2 available parameters,Inverter #2 available parameters
+AC current L1,AC current L2,AC current L3,DC voltage
+AC voltage L1,AC voltage L2,AC voltage L3,Ground Fault Resistance
+AC frequency L1,AC frequency L2,AC frequency L3,Inverter temperature
+AC power L1,AC power L2,AC power L3,Reactive power
+Apparent power L1,Apparent power L2,Apparent power L3,Total Energy AC
+Power factor L1,Power factor L2,Power factor L3,
+inverter available parameters,inverter available parameters,inverter available parameters,inverter available parameters
+Inverter #3 Energy,AC current,AC power,DC power
+AC current L1,AC current L2,AC current L3,Power control
+AC voltage L1,AC voltage L2,AC voltage L3,Inverter temperature
+AC power L1,AC power L2,AC power L3,DC voltage MPPT 1
+DC power MPPT 1,DC power MPPT 2,DC power MPPT 3,DC voltage MPPT 2
+DC current MPPT 1,DC current MPPT 2,DC current MPPT 3,DC voltage MPPT 3

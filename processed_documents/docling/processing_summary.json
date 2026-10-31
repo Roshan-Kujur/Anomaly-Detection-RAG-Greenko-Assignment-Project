@@ -1,0 +1,683 @@
+{
+    "processing_date": "2026-10-30T14:19:09.181030",
+    "total_pdfs": 4,
+    "successful_pdfs": 4,
+    "failed_pdfs": 0,
+    "results": [
+        {
+            "source_file": "1024891_Wind Turbine Maintenance Guide.pdf",
+            "conversion_status": "ConversionStatus.SUCCESS",
+            "page_count": 170,
+            "table_count": 58,
+            "picture_count": 49,
+            "tables": [
+                {
+                    "table_number": 1,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_1.csv",
+                    "rows": 12,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 2,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_2.csv",
+                    "rows": 30,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 3,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_3.csv",
+                    "rows": 39,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 4,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_4.csv",
+                    "rows": 38,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 5,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_5.csv",
+                    "rows": 24,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 6,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_6.csv",
+                    "rows": 12,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 7,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_7.csv",
+                    "rows": 19,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 8,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_8.csv",
+                    "rows": 11,
+                    "columns": 1,
+                    "status": "success"
+                },
+                {
+                    "table_number": 9,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_9.csv",
+                    "rows": 6,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 10,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_10.csv",
+                    "rows": 5,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 11,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_11.csv",
+                    "rows": 7,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 12,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_12.csv",
+                    "rows": 11,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 13,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_13.csv",
+                    "rows": 8,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 14,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_14.csv",
+                    "rows": 3,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 15,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_15.csv",
+                    "rows": 4,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 16,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_16.csv",
+                    "rows": 3,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 17,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_17.csv",
+                    "rows": 3,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 18,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_18.csv",
+                    "rows": 8,
+                    "columns": 6,
+                    "status": "success"
+                },
+                {
+                    "table_number": 19,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_19.csv",
+                    "rows": 9,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 20,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_20.csv",
+                    "rows": 3,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 21,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_21.csv",
+                    "rows": 6,
+                    "columns": 5,
+                    "status": "success"
+                },
+                {
+                    "table_number": 22,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_22.csv",
+                    "rows": 4,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 23,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_23.csv",
+                    "rows": 4,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 24,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_24.csv",
+                    "rows": 4,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 25,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_25.csv",
+                    "rows": 12,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 26,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_26.csv",
+                    "rows": 23,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 27,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_27.csv",
+                    "rows": 0,
+                    "columns": 0,
+                    "status": "success"
+                },
+                {
+                    "table_number": 28,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_28.csv",
+                    "rows": 7,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 29,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_29.csv",
+                    "rows": 9,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 30,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_30.csv",
+                    "rows": 5,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 31,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_31.csv",
+                    "rows": 3,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 32,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_32.csv",
+                    "rows": 2,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 33,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_33.csv",
+                    "rows": 17,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 34,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_34.csv",
+                    "rows": 11,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 35,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_35.csv",
+                    "rows": 9,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 36,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_36.csv",
+                    "rows": 4,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 37,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_37.csv",
+                    "rows": 2,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 38,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_38.csv",
+                    "rows": 17,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 39,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_39.csv",
+                    "rows": 9,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 40,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_40.csv",
+                    "rows": 2,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 41,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_41.csv",
+                    "rows": 24,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 42,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_42.csv",
+                    "rows": 23,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 43,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_43.csv",
+                    "rows": 6,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 44,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_44.csv",
+                    "rows": 15,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 45,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_45.csv",
+                    "rows": 3,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 46,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_46.csv",
+                    "rows": 1,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 47,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_47.csv",
+                    "rows": 14,
+                    "columns": 9,
+                    "status": "success"
+                },
+                {
+                    "table_number": 48,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_48.csv",
+                    "rows": 7,
+                    "columns": 6,
+                    "status": "success"
+                },
+                {
+                    "table_number": 49,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_49.csv",
+                    "rows": 3,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 50,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_50.csv",
+                    "rows": 20,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 51,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_51.csv",
+                    "rows": 4,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 52,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_52.csv",
+                    "rows": 3,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 53,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_53.csv",
+                    "rows": 2,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 54,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_54.csv",
+                    "rows": 5,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 55,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_55.csv",
+                    "rows": 5,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 56,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_56.csv",
+                    "rows": 9,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 57,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_57.csv",
+                    "rows": 2,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 58,
+                    "table_file": "1024891_Wind Turbine Maintenance Guide_table_58.csv",
+                    "rows": 1,
+                    "columns": 3,
+                    "status": "success"
+                }
+            ],
+            "markdown_path": "F:\\DataSets for Artificial Intelligence\\greenko assignment\\02_renewable_asset_fault_anomaly_copilot\\processed_documents\\docling\\markdown\\1024891_Wind Turbine Maintenance Guide.md",
+            "json_path": "F:\\DataSets for Artificial Intelligence\\greenko assignment\\02_renewable_asset_fault_anomaly_copilot\\processed_documents\\docling\\json\\1024891_Wind Turbine Maintenance Guide.json",
+            "processing_time_seconds": 1122.56,
+            "status": "success"
+        },
+        {
+            "source_file": "applsci-15-11461.pdf",
+            "conversion_status": "ConversionStatus.SUCCESS",
+            "page_count": 38,
+            "table_count": 17,
+            "picture_count": 24,
+            "tables": [
+                {
+                    "table_number": 1,
+                    "table_file": "applsci-15-11461_table_1.csv",
+                    "rows": 3,
+                    "columns": 5,
+                    "status": "success"
+                },
+                {
+                    "table_number": 2,
+                    "table_file": "applsci-15-11461_table_2.csv",
+                    "rows": 5,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 3,
+                    "table_file": "applsci-15-11461_table_3.csv",
+                    "rows": 5,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 4,
+                    "table_file": "applsci-15-11461_table_4.csv",
+                    "rows": 6,
+                    "columns": 5,
+                    "status": "success"
+                },
+                {
+                    "table_number": 5,
+                    "table_file": "applsci-15-11461_table_5.csv",
+                    "rows": 3,
+                    "columns": 5,
+                    "status": "success"
+                },
+                {
+                    "table_number": 6,
+                    "table_file": "applsci-15-11461_table_6.csv",
+                    "rows": 3,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 7,
+                    "table_file": "applsci-15-11461_table_7.csv",
+                    "rows": 4,
+                    "columns": 5,
+                    "status": "success"
+                },
+                {
+                    "table_number": 8,
+                    "table_file": "applsci-15-11461_table_8.csv",
+                    "rows": 5,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 9,
+                    "table_file": "applsci-15-11461_table_9.csv",
+                    "rows": 4,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 10,
+                    "table_file": "applsci-15-11461_table_10.csv",
+                    "rows": 4,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 11,
+                    "table_file": "applsci-15-11461_table_11.csv",
+                    "rows": 3,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 12,
+                    "table_file": "applsci-15-11461_table_12.csv",
+                    "rows": 4,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 13,
+                    "table_file": "applsci-15-11461_table_13.csv",
+                    "rows": 7,
+                    "columns": 5,
+                    "status": "success"
+                },
+                {
+                    "table_number": 14,
+                    "table_file": "applsci-15-11461_table_14.csv",
+                    "rows": 8,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 15,
+                    "table_file": "applsci-15-11461_table_15.csv",
+                    "rows": 5,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 16,
+                    "table_file": "applsci-15-11461_table_16.csv",
+                    "rows": 5,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 17,
+                    "table_file": "applsci-15-11461_table_17.csv",
+                    "rows": 3,
+                    "columns": 4,
+                    "status": "success"
+                }
+            ],
+            "markdown_path": "F:\\DataSets for Artificial Intelligence\\greenko assignment\\02_renewable_asset_fault_anomaly_copilot\\processed_documents\\docling\\markdown\\applsci-15-11461.md",
+            "json_path": "F:\\DataSets for Artificial Intelligence\\greenko assignment\\02_renewable_asset_fault_anomaly_copilot\\processed_documents\\docling\\json\\applsci-15-11461.json",
+            "processing_time_seconds": 143.11,
+            "status": "success"
+        },
+        {
+            "source_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring.pdf",
+            "conversion_status": "ConversionStatus.SUCCESS",
+            "page_count": 85,
+            "table_count": 9,
+            "picture_count": 117,
+            "tables": [
+                {
+                    "table_number": 1,
+                    "table_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring_table_1.csv",
+                    "rows": 30,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 2,
+                    "table_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring_table_2.csv",
+                    "rows": 29,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 3,
+                    "table_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring_table_3.csv",
+                    "rows": 12,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 4,
+                    "table_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring_table_4.csv",
+                    "rows": 31,
+                    "columns": 2,
+                    "status": "success"
+                },
+                {
+                    "table_number": 5,
+                    "table_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring_table_5.csv",
+                    "rows": 19,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 6,
+                    "table_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring_table_6.csv",
+                    "rows": 4,
+                    "columns": 5,
+                    "status": "success"
+                },
+                {
+                    "table_number": 7,
+                    "table_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring_table_7.csv",
+                    "rows": 4,
+                    "columns": 3,
+                    "status": "success"
+                },
+                {
+                    "table_number": 8,
+                    "table_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring_table_8.csv",
+                    "rows": 3,
+                    "columns": 4,
+                    "status": "success"
+                },
+                {
+                    "table_number": 9,
+                    "table_file": "Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring_table_9.csv",
+                    "rows": 5,
+                    "columns": 6,
+                    "status": "success"
+                }
+            ],
+            "markdown_path": "F:\\DataSets for Artificial Intelligence\\greenko assignment\\02_renewable_asset_fault_anomaly_copilot\\processed_documents\\docling\\markdown\\Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring.md",
+            "json_path": "F:\\DataSets for Artificial Intelligence\\greenko assignment\\02_renewable_asset_fault_anomaly_copilot\\processed_documents\\docling\\json\\Final-Report-IEA-PVPS-T13-19_2021_PV-Failure-Monitoring.json",
+            "processing_time_seconds": 307.99,
+            "status": "success"
+        },
+        {
+            "source_file": "wind-turbine-fault-diagnosis-and-predictive-maintenance-9jtmu5jdju.pdf",
+            "conversion_status": "ConversionStatus.SUCCESS",
+            "page_count": 13,
+            "table_count": 5,
+            "picture_count": 28,
+            "tables": [
+                {
+                    "table_number": 1,
+                    "table_file": "wind-turbine-fault-diagnosis-and-predictive-maintenance-9jtmu5jdju_table_1.csv",
+                    "rows": 0,
+                    "columns": 0,
+                    "status": "success"
+                },
+                {
+                    "table_number": 2,
+                    "table_file": "wind-turbine-fault-diagnosis-and-predictive-maintenance-9jtmu5jdju_table_2.csv",
+                    "rows": 0,
+                    "columns": 0,
+                    "status": "success"
+                },
+                {
+                    "table_number": 3,
+                    "table_file": "wind-turbine-fault-diagnosis-and-predictive-maintenance-9jtmu5jdju_table_3.csv",
+                    "rows": 0,
+                    "columns": 0,
+                    "status": "success"
+                },
+                {
+                    "table_number": 4,
+                    "table_file": "wind-turbine-fault-diagnosis-and-predictive-maintenance-9jtmu5jdju_table_4.csv",
+                    "rows": 0,
+                    "columns": 0,
+                    "status": "success"
+                },
+                {
+                    "table_number": 5,
+                    "table_file": "wind-turbine-fault-diagnosis-and-predictive-maintenance-9jtmu5jdju_table_5.csv",
+                    "rows": 0,
+                    "columns": 0,
+                    "status": "success"
+                }
+            ],
+            "markdown_path": "F:\\DataSets for Artificial Intelligence\\greenko assignment\\02_renewable_asset_fault_anomaly_copilot\\processed_documents\\docling\\markdown\\wind-turbine-fault-diagnosis-and-predictive-maintenance-9jtmu5jdju.md",
+            "json_path": "F:\\DataSets for Artificial Intelligence\\greenko assignment\\02_renewable_asset_fault_anomaly_copilot\\processed_documents\\docling\\json\\wind-turbine-fault-diagnosis-and-predictive-maintenance-9jtmu5jdju.json",
+            "processing_time_seconds": 72.63,
+            "status": "success"
+        }
+    ]
+}

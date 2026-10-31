@@ -1,0 +1,6 @@
+﻿Fault Type,Description,Causes,Impact
+Hot spots,Localized overheating in solar cells,"Shading, defective bypass diodes, and soldering defects","Decreased efficiency, potential fire hazard"
+Cell Cracks,Micro-cracks in silicon cells reduce power output,"Manufacturing defects, thermal cycling, and mechanical stress",Increased series resistance and reduced power generation
+Potential-Induced Degradation (PID),Performance loss due to leakage currents,"High system voltage, humidity, and poor grounding.",Reduced power output over time
+Delamination and Encapsulation Failure,The peeling of module layers causes water ingress,"Poor material quality, UV exposure, and humidity","Accelerated degradation, electrical insulation loss"
+Connector and Junction Box Failure,Lose or broken connections lead to open circuits,"Poor installation, thermal cycling, andwater ingress","Reduced power delivery, increased resistance"

@@ -1,0 +1,47 @@
+{
+    "method": "Rolling Median/MAD",
+    "holdout_evaluation": {
+        "total_observations": 48,
+        "detected_anomalies": 5,
+        "normal_observations": 43,
+        "anomaly_percentage": 10.42,
+        "anomalies_by_asset": {
+            "SOLAR_INV_01": {
+                "observations": 24,
+                "anomalies": 4,
+                "anomaly_percentage": 16.67
+            },
+            "WTG_07": {
+                "observations": 24,
+                "anomalies": 1,
+                "anomaly_percentage": 4.17
+            }
+        },
+        "anomalies_by_sensor": {
+            "power_mw": 3,
+            "vibration_mm_s": 2,
+            "irradiance_wm2": 3,
+            "wind_speed_ms": 0
+        }
+    },
+    "synthetic_anomaly_evaluation": {
+        "total_observations": 48,
+        "true_positives": 2,
+        "true_negatives": 41,
+        "false_positives": 5,
+        "false_negatives": 0,
+        "precision": 0.2857,
+        "recall": 1.0,
+        "f1_score": 0.4444,
+        "accuracy": 0.8958,
+        "synthetic_anomaly_observations": 2,
+        "synthetic_anomaly_detection_rate": 1.0,
+        "interpretation": "Metrics are measured against artificially injected anomalies. Unmodified observations are treated as negative examples for this synthetic benchmark; they are not confirmed normal observations."
+    },
+    "limitations": [
+        "The original dataset has no confirmed anomaly labels.",
+        "Holdout anomaly counts are descriptive, not supervised metrics.",
+        "Synthetic metrics measure detection of injected patterns only.",
+        "Unmodified observations are not guaranteed to be normal."
+    ]
+}

@@ -1,0 +1,7 @@
+﻿0,1
+corrective maintenance,"Maintenance tasks that are generated as a result of equipment failure. Corrective tasks are generated when equipment is purposely operated to failure and also when equipment failure is not wanted or planned. It is the most basic form of maintenance and also the most expensive. Most plants are moving away from corrective maintenance, but there will always be a portion of maintenance being performed as a result of equipment failure."
+elective maintenance,The classification of any work on power block equipment in which the identified potential or actual degradation is minor and does not threaten the component's design function or performance criteria.
+facilities,"Structures, systems, and components not associated with power generation. Structures may include training facilities, warehouses, maintenance shops, and administrative offices. Systems may include fire protection, plumbing, lighting, sewer, and drainage."
+monopile,A single totally enclosed structure that supports the nacelle and is mounted on a deep-buried reinforced concrete pad using hydraulically tensioned bolted fasteners.
+periodic maintenance,"""Time-based"" preventive maintenance actions taken to maintain a piece of equipment within design operating conditions and to extend its life."
+predictive maintenance,Maintenance tasks that are performed based on equipment condition. Predictive maintenance relies on technologies to determine the current condition of the equipment so that only the required maintenance is performed before equipment failure.

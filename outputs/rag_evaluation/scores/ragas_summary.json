@@ -1,0 +1,26 @@
+{
+  "total_records": 3,
+  "successful_records": 0,
+  "partially_evaluated_records": 3,
+  "metrics": {
+    "faithfulness": {
+      "mean": null,
+      "scored_records": 0
+    },
+    "answer_relevancy": {
+      "mean": null,
+      "scored_records": 0
+    },
+    "context_precision": {
+      "mean": null,
+      "scored_records": 0
+    },
+    "context_utilization": {
+      "mean": null,
+      "scored_records": 0
+    }
+  },
+  "context_metric_counts": {
+    "context_utilization": 3
+  }
+}

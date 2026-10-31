@@ -1,0 +1,21 @@
+﻿Problem/ Symptom,Possible Cause,Corrective Action
+noise,Use of lubricant with a lower viscosity than required,Use the correct viscosity lubricant.
+noise,Low lubricant viscosity from high lubricant temperature,Take the corrective actions noted for the abnormally high temperature problem/symptom.
+noise,Clogged oil filter,Replace the filter element.
+Low oil pressure,Clogged air filter,Clean or replace the filter element.
+Low oil pressure,Pump cavitation,Maintain the proper oil level in the reservoir.
+Low oil pressure,Air leak in the suction line,Check and tighten all pipe fittings.
+Low oil pressure,Incorrect relief valve setting,Set the relief valve correctly.
+Unusual noise,Worn parts,Pinpoint the noise with a mechanic's stethoscope. Replace the part.
+Unusual noise,Coupling misalignment,Realign the coupling.
+Excessive,Worn gearing,Replace the worn parts.
+,Transmission from other equipment,Add a sound blanket or enclosure.
+,Insufficient foundation rigidity or grout voids,Reinforce or repair the foundation.
+Excessive vibrations,Dynamic instability (critical speed),Design to attenuate critical speeds in the operating range.
+Excessive vibrations,Unbalanced parts,Determine which parts require balancing and which have been balanced.
+Excessive vibrations,Loose foundation bolting,Tighten the bolting.
+Excessive foaming,Air in the oil,Add an anti-foaming agent.
+Excessive foaming,No power,"Check the power supply, and repair or restore."
+No sensor readings,Faulty gauge or recording device,Test the gauge or recording equipment.
+No sensor readings,Failed sensor,Replace the sensor.
+No sensor readings,Lead wire braid rubbed through (wire contacting metal),Replace the lead wire.

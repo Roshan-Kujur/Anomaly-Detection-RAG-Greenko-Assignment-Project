@@ -1,0 +1,9 @@
+﻿Approach,Key Features,Advantages,Limitations
+Visual Inspection,Manual checks for physical damage,Simple and cost-effective,Time-consuming and labor-intensive
+Infrared Thermography,Identifies hotspots and defective cells,Non-invasive and accurate,Requires thermal imaging equipment
+I-V Curve Tracing,Assesses module performance,Provides electrical health insights,Requires specialized instruments
+Ground Fault Detection,Detects insulation failures,Enhances safety,May not detect minor faults
+AI-Based Fault Detection,Uses ML algorithms for analysis,High accuracy and automation,Requires large datasets for training
+Digital Twins,Virtual model for real- time monitoring,Predictive and proactive,High computational requirements
+IoT-Based Monitoring,Sensors for continuous data collection,Real-time fault detection,Internet dependency
+Cloud-Based Analytics,Remote fault diagnosis,Scalable and efficient,Data privacy concerns

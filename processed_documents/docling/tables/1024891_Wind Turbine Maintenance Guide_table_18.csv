@@ -1,0 +1,9 @@
+﻿Component,Pre- Stressed Concrete,Steel,Aluminum,Copper,Fiberglass Reinforced Plastic
+Rotor,Rotor,Rotor,Rotor,Rotor,Rotor
+Hub,-,100,-,-,-
+Blades,-,5,-,-,95
+Nacelle,Nacelle,Nacelle,Nacelle,Nacelle,Nacelle
+Gearbox,-,98,<2,<2,-
+Generator,-,65,-,35,-
+Frame Machinery and Shell,-,85,8,4,3
+Tower,2,98,-,-,-

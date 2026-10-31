@@ -1,0 +1,4 @@
+﻿PV Configuration,Connection Type,Key Components,Common Faults,Typical Monitoring/ Detection Method
+Standalone PV,Isolated (Off-grid),"Panels, charge controller, battery, inverter","Battery degradation, wiring faults, and controller failure","Voltage-current analysis, battery SoC estimation"
+Grid-Connected PV,Grid-synchronized,"PV array, inverter, grid interface, protection devices","Inverter failure, synchronization loss, ground faults","FFT, impedance spectroscopy, AI-based signal analysis"
+Hybrid PV,Dual-mode (Grid + Storage),"PV panels, inverter, grid, batteries, auxiliary generator","Inverter mismatch, storage overload, and control instability","SCADA/IoT diagnostics, model-based fault prediction"

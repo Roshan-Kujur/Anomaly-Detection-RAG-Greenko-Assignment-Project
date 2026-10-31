@@ -1,0 +1,10 @@
+﻿Manufacturer,Generator Features/Design
+Coemi,Coemi-G3 turbines claim a very efficient design with a power conversion of 85% because they use an asynchronous generator that is directly connected to the grid with no need for an inverter.
+GE Energy,Permanent magnet generator for higher efficiency at low wind speed. Brushless excitation for simplified maintenance.
+Northern Power Systems,Permanent magnet (PM) generator.
+ENERCON,"Annular generator. Among other features, the annular generator is a key component in ENERCON's gearless wind generator design."
+ENERCON,"Combined with the rotor hub, it provides an almost frictionless flow of energy, while a smaller number of moving components ensure minimal material wear. Unlike conventional fast-running generators, ENERCON's annular generator is subjected to little technical wear, making it ideal for particularly heavy loads and a long service life. ENERCON's annular generator is a low-speed synchronous generator with no direct grid coupling. Output voltage and frequency vary with speed and are converted for output to the grid via a dc link and an inverter, which allow for high- speed variability. Advantages of ENERCON's annular generator:"
+ENERCON, No gear
+ENERCON, Low wear due to slow machine rotation  Low machine stress due to high level of speed variability
+ENERCON, Yield-optimized control
+ENERCON," High power quality According to ENERCON's service life requirements, the copper winding in the stator (the stationary part of the annular generator) known as closed, single-layer basket winding is produced in insulation class F (155°C). It consists of individual round wires gathered in bundles and varnish insulated. At ENERCON, the copper winding is done manually. In spite of increasing automation in other manufacturing areas, in this case preference has been given to manual labor for good reason. It ensures that all materials used are fully inspected. Furthermore, a special work process allows continuous windings to be produced. Each wire strand is continuous from start to end."

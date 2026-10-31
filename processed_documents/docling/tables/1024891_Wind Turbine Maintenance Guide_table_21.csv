@@ -1,0 +1,7 @@
+﻿Wind Turbine Size,Tower Height Range (M),Example Component Failure,Repair cost ($1000),Crane Cost ($1000)
+Kw Class,60 - 70,Gearbox rebuild,$30 - $70,$10 - $40
+Kw Class,-,Generator Bearing replacement,$2 - $4,In situ
+Kw Class,60 - 70,Generator Rebuild,$10 - $20,$10 - $20
+Mw Class,70 - 80,Gearbox rebuild,$60 - $160,$40 - $80
+Mw Class,70 - 80,Generator Bearing replacement,$4 - $8,In situ
+Mw Class,70 - 80,Generator Rebuild,$30 - $50,$30 - $60

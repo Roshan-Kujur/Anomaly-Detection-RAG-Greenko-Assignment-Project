@@ -1,0 +1,5 @@
+﻿Subcomponent,Description
+Rotor blades,"Blades use the principles of lift to convert the energy of the wind into mechanical energy. Stall-regulated blades limit lift, or momentum, when wind speeds are too great in order to avoid damaging the machine. Variable-pitch blades rotate to minimize their surface area and, thereby, regulate rotational speed."
+Pitch drive,"This system controls the pitch of the blades to achieve the optimum angle for the wind speed and desired rotation speed. At lower wind speeds, a perpendicular pitch increases the energy harnessed by the blades, and at high wind speeds, a parallel pitch minimizes the blade surface area and slows the rotor. Typically, one motor is used to control each blade. Power is either electric or provided by hydraulics in the nacelle and is supplemented by a hydraulic accumulator in the event of system failure."
+Extenders,These steel components support the rotor blades and secure them to the hub
+Hub,"The hub serves as a base for the rotor blades and extenders, as well as a place to house the control systems for the pitch drive. It rotates freely and attaches to the nacelle using a shaft and bearing assembly."

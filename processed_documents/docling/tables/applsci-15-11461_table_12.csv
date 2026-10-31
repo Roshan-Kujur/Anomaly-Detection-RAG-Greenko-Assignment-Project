@@ -1,0 +1,5 @@
+﻿Fault Type,Description,Causes,Impact
+Soiling and Dust Accumulation,"Dust, dirt, and bird droppings block sunlight","Lack of cleaning, industrial pollution","Reduced energy yield, higher maintenance costs"
+Shading Effects,Partial shading reduces module efficiency.,"Trees, buildings, cloud cover, module mismatch","Decreased power output, hotspot formation"
+Hail and Weather Damage,Physical damage from extreme weather conditions,"Hailstorms, heavy rain, snow, and wind pressure","Module breakage, reduced efficiency, system failure"
+Corrosion &Rusting,Degradation of metal components,"Humidity, saltwater exposure, and poor-quality materials","Structural weakness, electrical failures"

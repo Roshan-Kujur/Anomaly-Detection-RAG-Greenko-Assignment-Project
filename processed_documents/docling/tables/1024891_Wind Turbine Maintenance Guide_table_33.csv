@@ -1,0 +1,18 @@
+﻿Component/ Assembly,PM Activities Performed Semiannually
+Main cabinet,"Visually inspect the general condition, the tightness of connections with various components, doors, coatings, and electrical leads."
+,"Perform a functional test of controls, doors closing properly, ventilation, and cable clamping."
+,Visually inspect the general condition and cleanliness of the filter element.
+,"Set the thermostat at 25C, and verify operability of temperature control with the filter fan and thermostat returned to service."
+,Ensure that the proper version of the programmable logic controller (PLC) software is installed.
+,Verify that all parameters of the PLC software are properly set.
+,Ensure that the proper version of the turbine process computer (PC) software is installed.
+,Check the parameters of the turbine PC software in accordance with the software provider's recommendations.
+,Perform a disk defragmentation of the turbine PC. Perform a functional test of the uninterruptable power supply (UPS) to ensure that the system remains in operation for at least 5
+Low-voltage main distribution system,Replace the fan filter as needed.
+,"minutes. Visually inspect cables and cable terminals for corrosion, insulation, abrasion, spark marks, and physical damage."
+,"Visually inspect the contactor relay for tight connection and spark marks. Visually inspect the connection of circuit breaker (synchronization switch), for arc marks, cleanliness, and the condition of the arc"
+,"chamber and contacts. Perform a functional test of the terminal for tight connection and contact, as well as switching function."
+,Perform circuit breaker maintenance in accordance with the manufacturer's recommendations.
+,Verify that all circuit breaker parameters are properly set.
+,Visually inspect the filter element. Clean and replace it if needed.
+Frequency converter cabinets,"Visually inspect the insulated gate bipolar transistor (IGBT) power circuits, capacitors, battery, over-voltage protection of dc link, heating, grid protection, fuse gear and tripping units, and insulation resistance. Visually inspect the general condition of the filter element, and replace it if needed."

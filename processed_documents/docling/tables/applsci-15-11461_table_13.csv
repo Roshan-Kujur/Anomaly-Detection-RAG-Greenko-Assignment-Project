@@ -1,0 +1,8 @@
+﻿Diagnostic Domain,Methodology,Key Principle,Advantages,Limitations
+,I-V and P-V curve tracing,Deviation in the curve shape indicates faults,"Simple, direct measurement",Requires a shutdown for precise measurement
+Electrical Analysis,FFT and harmonic analysis,Frequency-domain change under fault,Detects inverter/ grid faults,Needs a high sampling rate
+,Impedance spectroscopy,Frequency response deviation,Sensitive to early degradation,Complex instrumentation
+Thermal/optical imaging,Infrared thermography Electroluminescence (EL),Hotspots show thermal anomalies Emission defects under bias,"Non-contact, field-applicable High accuracy for micro-cracks",Needs controlled lab conditions Needs a large labeled dataset
+Data-driven/AI-based,"Machine learning (SVM, ANN, CNN, LSTM)",Pattern recognition from historical data,High automation and,Needs a large labeled dataset
+,,,scalability,Needs a large labeled dataset
+SCADA/IoT-based monitoring,Continuous data from,condition sensors Real-time and alarms,analytics,Sensor calibration and communication reliability are required.

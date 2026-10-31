@@ -1,0 +1,30 @@
+{
+    "method": "Rolling Median/MAD",
+    "window_size": 6,
+    "min_periods": 3,
+    "anomaly_threshold": 3.5,
+    "asset_features": {
+        "solar": [
+            "power_mw",
+            "vibration_mm_s",
+            "irradiance_wm2"
+        ],
+        "wind": [
+            "power_mw",
+            "vibration_mm_s",
+            "wind_speed_ms"
+        ]
+    },
+    "fallback_mad": {
+        "solar": {
+            "power_mw": 0.31699999999999995,
+            "vibration_mm_s": 0.07999999999999985,
+            "irradiance_wm2": 167.04999999999995
+        },
+        "wind": {
+            "power_mw": 0.2899999999999998,
+            "vibration_mm_s": 0.07999999999999985,
+            "wind_speed_ms": 0.6000000000000014
+        }
+    }
+}
